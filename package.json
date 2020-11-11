@@ -1,0 +1,14 @@
+{
+  "name": "monorepo",
+  "version": "1.0.0",
+  "description": "monorepo-template",
+  "main": "index.js",
+  "repository": "git@github.com:bywachira/monorepo-quickstart.git",
+  "author": "Erick Wachira",
+  "license": "ISC",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {}
+}
