@@ -1,7 +1,7 @@
 {
   "name": "bywachira",
   "version": "1.0.0",
-  "description": "All personal projects in one place",
+  "description": "All my projects in one place",
   "main": "index.js",
   "repository": "git@github.com:bywachira/monorepo-quickstart.git",
   "author": "Erick Wachira",
@@ -10,5 +10,9 @@
   "workspaces": [
     "packages/*"
   ],
-  "scripts": {}
+  "scripts": {
+    "wip:dev": "yarn --cwd packages/wip dev",
+    "wip:start": "yarn --cwd packages/wip start",
+    "wip:build": "yarn --cwd packages/wip build"
+  }
 }
