@@ -13,6 +13,10 @@
   "scripts": {
     "wip:dev": "yarn --cwd packages/wip dev",
     "wip:start": "yarn --cwd packages/wip start",
-    "wip:build": "yarn --cwd packages/wip build"
+    "wip:build": "yarn --cwd packages/wip build",
+    "me:dev": "yarn --cwd packages/me dev",
+    "me:start": "yarn --cwd packages/me start",
+    "me:build": "yarn --cwd packages/me build",
+    "me:export": "yarn --cwd packages/me export"
   }
 }

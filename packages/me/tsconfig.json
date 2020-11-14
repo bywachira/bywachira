@@ -20,6 +20,6 @@
     "resolveJsonModule": true,
     "isolatedModules": true
   },
-  "exclude": ["../wip/node_modules"],
-  "include": ["../wip/next-env.d.ts", "../wip/**/*.ts", "../wip/**/*.tsx"]
+  "exclude": ["node_modules"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]
 }
