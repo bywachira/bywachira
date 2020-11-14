@@ -13,9 +13,9 @@ export const fetchProjects = () => async (dispatch: Function) => {
         resource_types: "[projects]"
     }
 
-    return axios.post(`https://api.todoist.com/sync/v8/sync`, qs.stringify(payload), {
+    return axios.get(`https://api.todoist.com/rest/v1/projects`, {
         headers: {
-            "Content-Type": "application/x-www-form-urlencoded"
+            "Authorization": `Bearer ${payload.token}`
         }
     }).then(res => {
         dispatch({
