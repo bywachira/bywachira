@@ -26,16 +26,39 @@ class Todoist {
 	}
 
 	projectsToString(projects: IProject[]) {
-		let message = ``
+		let message = '🚧 Your `Projects`:\n\n'
 
 		for (let i = 0; i < projects.length; i++) {
-			message = message + `**${projects[i].name}**\n`;			
+			message = message + `🚧 **${projects[i].name}**\n`;
 		}
 
 		console.log(message.toString())
 
 		return message
 	}
+
+	async fetchProject() {
+		try {
+			const response = await axios.get(`${this.baseURL}/projects`)
+		} catch (e) { }
+	}
+
+	async fetchTasks() {
+		try {
+			const response = await axios.get(`${this.baseURL}/tasks`, {
+				headers: {
+					Authorization: `Bearer ${this.token}`
+				}
+			})
+			return response.data
+		} catch (e) {
+			throw {
+				message: e.reponse.data.message
+			}
+		}
+	}
+
+	
 }
 
 export default Todoist
