@@ -17,6 +17,9 @@
     "me:dev": "yarn --cwd packages/me dev",
     "me:start": "yarn --cwd packages/me start",
     "me:build": "yarn --cwd packages/me build",
-    "me:export": "yarn --cwd packages/me export"
+    "me:export": "yarn --cwd packages/me export",
+    "bip:start": "yarn --cwd packages/log start",
+    "bip:build": "yarn --cwd packages/log build",
+    "bip:dev": "yarn --cwd packages/log dev"
   }
 }
