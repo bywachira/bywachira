@@ -20,6 +20,9 @@
     "me:export": "yarn --cwd packages/me export",
     "bip:start": "yarn --cwd packages/log start",
     "bip:build": "yarn --cwd packages/log build",
-    "bip:dev": "yarn --cwd packages/log dev"
+    "bip:dev": "yarn --cwd packages/log dev",
+    "thedevnote:dev": "yarn --cwd packages/thedevnote dev",
+    "thedevnote:start": "yarn --cwd packages/thedevnote start",
+    "thedevnote:build": "yarn --cwd packages/thedevnote build"
   }
 }
